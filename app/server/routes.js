@@ -8,8 +8,9 @@ module.exports = function(app) {
   });
 
   // Wildcard all other GET requests to the angular app
-  app.get('*', function(req, res){
-    res.sendfile('./app/client/index.html');
-  });
+  // This shouldn't be here, in case pages are not found.
 
+  // app.get('*', function(req, res){
+  //   res.sendfile('./app/client/index.html');
+  // });
 };
